@@ -10,7 +10,6 @@ ui = 0
 guesses = 0
 while random_num != ui:
     ui = int(input("give me your best guess: "))
-    guesses = guesses + 1 
     if ui < random_num:
         print("Higher!")
         guesses = guesses + 1        
@@ -22,4 +21,4 @@ while random_num != ui:
     if ui == 6969:
         print(f"cheat table:hehe the number is {random_num} guess it and have fun Hehe")
 
-print(f"CONGRATS U GOT IT it took you {guesses} guesses")
+print(f"CONGRATS U GOT IT it took you {guesses + 1} guesses")
